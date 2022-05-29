@@ -2,4 +2,4 @@
 
 ## https://grooveconnect.herokuapp.com/
 
-./dist/assets/images/groove.png
+dist/assets/images/groove.png
