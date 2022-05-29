@@ -1,0 +1,36 @@
+body{
+   background-color: #212e40;
+
+   & .mainPage{
+      background-image: linear-gradient(#384b62, #212e40);
+      background-repeat: no-repeat;
+      background-size: 100% 100%;      
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 5rem;
+         
+      & .imageBox{
+         padding: 5rem;
+         display: flex;
+         justify-content: center;
+         
+         & >div:nth-of-type(1){
+            width: 20rem;
+            justify-self: center;
+         }
+      }
+
+      & .errorMessage{
+         text-align: center;
+      }
+      
+      & button{
+         background-color: #54c5b9;
+      }
+      
+      & button:hover{
+         background-color: #6cdfca;
+      }
+   }
+}

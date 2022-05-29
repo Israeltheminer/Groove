@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Groove</title>
+   <link rel="apple-touch-icon" sizes="180x180" href="dist/assets/favicon/apple-touch-icon.png">
+   <link rel="icon" type="image/png" sizes="32x32" href="dist/assets/favicon/favicon-32x32.png">
+   <link rel="icon" type="image/png" sizes="16x16" href="dist/assets/favicon/favicon-16x16.png">
+   <link rel="manifest" href="dist/assets/favicon/site.webmanifest">
+   <link rel="stylesheet" href="dist/styles/homepage.css">
+</head>
+<body>
+   <div class="main-page grid grid-cols-2">
+      <div class="slideshow-page">
+         <div class="">
+            <div class="mySlides">
+               <div class="logoBox">
+                  <div>
+                     <img src="dist/assets/images/logo.png">
+                  </div>
+               </div>
+               <div class="headingBox">
+                  <h2 class="text-center">Musical control out of this world</h2>
+               </div>
+               <div class="imageBox">
+                  <div>
+                     <img src="dist/assets/images/rocket_ship.svg">
+                  </div>
+               </div>
+               <div class="activeSlide">
+                  <span class="highlight active">&nbsp</span>
+                  <span class="highlight inactive">&nbsp</span>
+                  <span class="highlight inactive">&nbsp</span>
+                  <span class="highlight inactive">&nbsp</span>
+               </div>
+            </div>
+            <div class="mySlides">
+               <div class="logoBox">
+                  <div>
+                     <img src="dist/assets/images/logo.png">
+                  </div>
+               </div>
+               <div class="headingBox">
+                  <h2 class="text-center">Currated playlists to your taste sent to you daily</h2>
+               </div>
+               <div class="imageBox">
+                  <div>
+                     <img src="dist/assets/images/playlist.svg">
+                  </div>
+               </div>
+               <div class="activeSlide">
+                  <span class="highlight inactive">&nbsp</span>
+                  <span class="highlight active">&nbsp</span>
+                  <span class="highlight inactive">&nbsp</span>
+                  <span class="highlight inactive">&nbsp</span>
+               </div>
+            </div>
+            <div class="mySlides">
+               <div class="logoBox">
+                  <div>
+                     <img src="dist/assets/images/logo.png">
+                  </div>
+               </div>
+               <div class="headingBox">
+                  <h2 class="text-center">Get quick and important updates on your favourite genres and artistes </h2>
+               </div>
+               <div class="imageBox">
+                  <div>
+                     <img src="dist/assets/images/fast.svg">
+                  </div>
+               </div>
+               <div class="activeSlide">
+                  <span class="highlight inactive">&nbsp</span>
+                  <span class="highlight inactive">&nbsp</span>
+                  <span class="highlight active">&nbsp</span>
+                  <span class="highlight inactive">&nbsp</span>
+               </div>
+            </div>
+            <div class="mySlides">
+               <div class="logoBox">
+                  <div>
+                     <img src="dist/assets/images/logo.png">
+                  </div>
+               </div>
+               <div class="headingBox">
+                  <h2 class="text-center">Get what matters to you</h2>
+               </div>
+               <div class="imageBox">
+                  <div>
+                     <img src="dist/assets/images/mail.svg">
+                  </div>
+               </div>
+               <div class="activeSlide">
+                  <span class="highlight inactive">&nbsp</span>
+                  <span class="highlight inactive">&nbsp</span>
+                  <span class="highlight inactive">&nbsp</span>
+                  <span class="highlight active">&nbsp</span>
+               </div>
+            </div>
+          </div>
+      </div>
+      <div class="sign-up-page">
+         <div class="sign-up-header">
+            <h1>Sign Up</h1>
+         </div>
+         <form action="/" method="POST">
+            <div>
+               <h3 class="input-header">First Name</h3>
+                  <p></p>
+               <input class="input-box" type="text" name="firstName" id="first-name" required>  
+            </div>
+            <div>
+               <h3 class="input-header">Last Name</h3>
+               <input class="input-box" type="text" name="lastName" id="last-name" required>
+            </div>
+            <div>
+               <h3 class="input-header">Email</h3>
+               <input class="input-box" type="email" name="userEmail" id="email" required>
+            </div>
+            <div class="terms-box">
+               <div>
+                  <input class="inline terms-checkbox" type="checkbox" name="termsAgreement" id="terms-agreement" required>
+                  <p class="inline">I agree with all statements in the <a class="terms-link" href="#">terms and conditions.</a>
+                  </p>
+               </div>
+               <button class="sign-up-button" type="submit">Sign Up</button>
+            </div>
+         </form>
+      </div>
+   </div>
+   <script src="dist/scripts/main.js"></script>
+</body>
+</html>

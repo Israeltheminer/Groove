@@ -1,0 +1,38 @@
+{
+  "name": "groove",
+  "version": "1.0.0",
+  "description": "Groove sign-up page",
+  "main": "app.js",
+  "scripts": {
+    "homepage:css:watch": "postcss src/styles/homepage.css -d dist/styles/ --watch",
+    "successpage:css:watch": "postcss src/styles/successpage.css -d dist/styles/ --watch",
+    "errorpage:css:watch": "postcss src/styles/errorpage.css -d dist/styles/ --watch",
+    "nopage:css:watch": "postcss src/styles/nopage.css -d dist/styles/ --watch",
+    "webpack:build": "webpack --mode=production",
+    "webpack": "webpack --mode=development",
+    "webpack:dev": "webpack --mode=development --watch"
+  },
+  "author": "Israel Iyanda",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.9",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.1.0",
+    "postcss-import-ext-glob": "^2.0.1",
+    "postcss-preset-env": "^7.6.0",
+    "tailwindcss": "^3.0.24",
+    "webpack": "^5.72.1",
+    "webpack-cli": "^4.9.2"
+  },
+  "dependencies": {
+    "@mailchimp/mailchimp_marketing": "^3.0.75",
+    "axios": "^0.27.2",
+    "body-parser": "^1.20.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.1",
+    "jquery": "^3.6.0",
+    "request": "^2.88.2"
+  }
+}

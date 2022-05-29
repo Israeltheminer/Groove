@@ -1,0 +1,26 @@
+body{
+   background-color: #ffffff;
+   color:  #212e40;
+
+   & .mainPage{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      padding: 8rem;
+         
+      & .imageBox{
+         padding: 3rem;
+         display: flex;
+         justify-content: center;
+         
+         & >div:nth-of-type(1){
+            width: 20rem;
+            justify-self: center;
+         }
+      }
+
+      & .errorMessage{
+         text-align: center;
+      }
+   }
+}
