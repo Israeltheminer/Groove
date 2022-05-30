@@ -1,3 +1,9 @@
+@custom-media --bp-sm-laptop (width <= 1200px);
+@custom-media --bp-tablet (width <= 850px);
+@custom-media --bp-mobile (width <= 500px);
+@custom-media --bp-md-mobile (width <= 380px);
+@custom-media --bp-sm-mobile (width <= 320px);
+
 body{
    background-color: #ffffff;
    color:  #212e40;
@@ -21,6 +27,40 @@ body{
 
       & .errorMessage{
          text-align: center;
+      }
+   }
+}
+
+@media(--bp-mobile){
+   body{
+   
+      & .mainPage{
+         padding: 4rem 3rem;
+            
+         & .imageBox{
+            padding: 4rem;
+            
+            & >div:nth-of-type(1){
+               width: 20rem;
+            }
+         }
+      }
+   }
+}
+
+@media(--bp-md-mobile){
+   body{
+   
+      & .mainPage{
+         padding: 5rem 2rem;
+            
+         & .imageBox{
+            padding: 2rem;
+            
+            & >div:nth-of-type(1){
+               width: 20rem;
+            }
+         }
       }
    }
 }
