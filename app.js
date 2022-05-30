@@ -1,14 +1,15 @@
 const express = require("express");
-const https = require("https") 
-const axios = require('axios')
-const request = require('request')
-const bodyParser = require('body-parser')
-const cors = require('cors')
+const https = require("https");
+const axios = require('axios');
+const request = require('request');
+const bodyParser = require('body-parser');
+const cors = require('cors');
 const path = require('path');
 const mailchimp = require("@mailchimp/mailchimp_marketing");
-const app = express()
+require('dotenv').config();
+const app = express();
 const { json } = require("express/lib/response");
-const port = process.env.PORT || 8080
+const port = process.env.PORT || 8080;
 
 const DIST = path.join(__dirname , "./dist")
 const homePage = path.join(DIST, "index.html")
@@ -41,7 +42,7 @@ app.post('/', (req, res)=> {
 	const jsonStringSubscriberData = JSON.stringify(subscriberData)
 	
 	mailchimp.setConfig({
-		apiKey: "e3a0be586feb4804ac9160c75109a82f-us14",
+		apiKey: process.env.MAILCHIMP_API_KEY,
 		server: "us14",
 	});
 	const listId = "c58721a1fe";
