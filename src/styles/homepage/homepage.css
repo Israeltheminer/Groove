@@ -1,3 +1,9 @@
+@custom-media --bp-sm-laptop (width <= 1200px);
+@custom-media --bp-tablet (width <= 850px);
+@custom-media --bp-mobile (width <= 500px);
+@custom-media --bp-md-mobile (width <= 380px);
+@custom-media --bp-sm-mobile (width <= 320px);
+
 body{
    height: 100vh;
    background-image: linear-gradient(to right, #54c5b9 0%, #54c5b9 50%, #212e40 50%, #212e40 100%);
@@ -58,11 +64,32 @@ body{
          height: 12px;
          box-shadow: 0 0 15px #000;
       }
-
+      
       & .inactive{
          width: 8px;
          height: 8px;
       }
+   }
+}
+
+@media (--bp-sm-laptop){
+   .slideshow-page{
+      & .headingBox{
+         padding: 3rem 3rem 0;
+      }
+
+      & .imageBox{
+
+         & >div:nth-of-type(1){
+            width: 13rem;
+         }
+      }
+   }
+}
+
+@media (--bp-tablet){
+   .slideshow-page{
+      display: none; 
    }
 }
 
