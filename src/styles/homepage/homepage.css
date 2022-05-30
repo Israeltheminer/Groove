@@ -118,3 +118,70 @@ body{
       background-color: #abf2e5;
    }
 }
+
+@media (--bp-sm-laptop){
+   .sign-up-page{
+      padding: 8rem 4.5rem 3rem;
+   
+      & .sign-up-header{
+         margin-bottom: 2rem;
+      }
+   
+      & .input-box{
+         width: 95%;
+      }
+   
+      & .terms-box{
+         margin: 0 auto;
+      }
+   }   
+}
+
+@media (--bp-tablet){
+   .main-page{
+      display: block;
+   }
+
+   .sign-up-page{
+      padding: 8rem 6rem 3rem;
+      
+      & .logoBox{
+         display: block;
+         padding: 2rem 0;
+         & >div:nth-of-type(1){
+            width: 3rem;
+         }
+      }
+
+      & .sign-up-header{
+         margin-bottom: 3rem;
+      }
+   
+      & .input-box{
+         width: 100%;
+      }
+   
+      & .terms-box{
+         margin: 0 auto;
+      }
+   }
+}
+
+@media (--bp-mobile){
+   .sign-up-page{
+      padding: 4rem;
+   }
+}
+
+@media (--bp-md-mobile){
+   .sign-up-page{
+      padding: 3rem;
+
+      & .logoBox{
+
+         & >div:nth-of-type(1){
+            width: 2.5rem;
+         }
+      }
+   }
+}
