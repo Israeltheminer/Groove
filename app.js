@@ -10,23 +10,19 @@ const app = express()
 const { json } = require("express/lib/response");
 const port = process.env.PORT || 8080
 
-const distPath = path.join(__dirname , "./dist")
-const homePage = path.join(distPath, "index.html")
-const successPage = path.join(distPath, "success.html")
-const errorPage = path.join(distPath, "error.html")
-const nullPage = path.join(distPath, "404.html")
-const activeMemberPage = path.join(distPath, "activeMember.html")
+const DIST = path.join(__dirname , "./dist")
+const homePage = path.join(DIST, "index.html")
+const successPage = path.join(DIST, "success.html")
+const errorPage = path.join(DIST, "error.html")
+const nullPage = path.join(DIST, "404.html")
+const activeMemberPage = path.join(DIST, "activeMember.html")
 
 app.use(cors());
-app.use('/dist', express.static(distPath));
+app.use('/dist', express.static(DIST));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get('/', (req, res)=> {
 	res.sendFile(homePage)
-})
-
-app.get('/error', (req, res)=> {
-	res.sendFile(errorPage)
 })
 
 app.post('/', (req, res)=> {
