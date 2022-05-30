@@ -2,4 +2,4 @@
 
 ## https://grooveconnect.herokuapp.com/
 
-./dist/assets/images/groove.png
+![Design preview for the Groove Sign-Up page ](./dist/assets/images/groove.png)
