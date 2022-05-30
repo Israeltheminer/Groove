@@ -1,8 +1,69 @@
+@custom-media --bp-sm-laptop (width <= 1200px);
+@custom-media --bp-tablet (width <= 850px);
+@custom-media --bp-mobile (width <= 500px);
+@custom-media --bp-md-mobile (width <= 380px);
+@custom-media --bp-sm-mobile (width <= 320px);
+
 h1{
    font-size: 36px;
+   line-height: 2;
+   font-weight: 700;
 }
 
 h2{
    font-size: 30px;
    line-height: 2;
+   font-weight: 600;
+}
+
+h3{
+   font-size: 20px;
+   line-height: 2;
+   font-weight: 500;
+}
+
+p{
+   font-size: 16px;
+   opacity: 0.9;
+}
+
+input{
+   font-size: 16px;
+}
+
+@media (--bp-sm-laptop){
+   h1{
+      font-size: 30px;
+   }
+   
+   h2{
+      font-size: 27px;
+   }
+   
+   h3{
+      font-size: 18px;
+   }
+}
+
+@media (--bp-tablet){
+   h1{
+      font-size: 28px;
+   }
+   
+   h2{
+      font-size: 24px;
+   }
+   
+   h3{
+      font-size: 20px;
+   }
+}
+
+@media (--bp-mobile){
+   h3{
+      font-size: 18px;
+   }
+   p{
+      font-size: 14px;
+   }
 }
