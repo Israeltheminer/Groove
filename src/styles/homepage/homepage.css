@@ -26,7 +26,7 @@ body{
    }
 
    & .logoBox{
-      padding: 2rem;
+      padding: 2rem 6rem;
       & >div:nth-of-type(1){
          width: 2rem;
       }
