@@ -199,13 +199,13 @@ body{
 
 @media (--bp-mobile){
    .sign-up-page{
-      padding: 4rem;
+      padding: 3.5rem;
    }
 }
 
 @media (--bp-md-mobile){
    .sign-up-page{
-      padding: 3rem;
+      padding: 2.5rem;
 
       & .logoBox{
 
