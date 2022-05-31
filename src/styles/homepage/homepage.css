@@ -88,6 +88,9 @@ body{
 }
 
 @media (--bp-tablet){
+   body{
+      background-image: linear-gradient(to right, #212e40 0%, #212e40 100%);
+   }
    .slideshow-page{
       display: none; 
    }
